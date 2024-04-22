@@ -1,0 +1,20 @@
+<service>
+  <!-- 这是服务的标识符，用于在服务管理器中显示 -->
+  <id>MyDotNetService</id>
+  <!-- 服务的名称 -->
+  <name>My .NET Service</name>
+  <!-- 服务的描述 -->
+  <description>This is a sample .NET service running with WinSW.</description>
+  <!-- 服务的执行文件路径 -->
+  <executable>path\to\your\dotnet\executable</executable>
+  <!-- 服务的工作目录 -->
+  <workingdirectory>path\to\working\directory</workingdirectory>
+  <!-- 服务的启动类型 -->
+  <logmode>rotate</logmode>
+  <!-- 这是服务启动时的用户帐户，可以是 LocalSystem 或具有适当权限的其他用户 -->
+  <logpath>log\path\MyDotNetService.log</logpath>
+  <!-- 启动参数，可选 -->
+  <arguments>any additional arguments here</arguments>
+  <!-- 需要监视的文件，可选 -->
+  <startarguments>-a -b -c</startarguments>
+</service>
